@@ -70,13 +70,13 @@ const handleCopyClick = () => {
     <textarea className="form-control" value={text} style={{color: props.mode==='dark'?'white':'black', backgroundColor: props.mode==='dark'?'grey':'white'}} onChange={handleOnChange} id="myBox" rows="6"></textarea>
     </div>
     
-    <button className="btn btn-success mx-2" onClick={handleClick} >Reset text to default</button>
-    <button className="btn-bt-primary mx-2" style={{backgroundColor:'blue', color:'white'}} onClick={handleUpClick} >Convert to Upper text</button>
-    <button className="btn-btnn-primary mx-2" style={{backgroundColor:'blue', color:'white'}} onClick={handleLowClick} >Convert to Lower text</button>
-        <button className="btn-bt-primary mx-2" style={{backgroundColor:'grey', color:'yellow'}} onClick={handleCopyClick} >Copy the text</button>
-    <button className="btn-btnn-primary mx-2" style={{backgroundColor:'blue', color:'white'}} onClick={handleExtraSpaces} >Remove extra spaces</button>
-    <button className="btn-btnn-primary mx-2" style={{backgroundColor:'blue', color:'white'}} onClick={reversed} >Reverse text</button>
-    <button type="submit" className="btn-btnn-primary mx-3" style={{backgroundColor:'green', color:'white'}} onClick={speak} >Speech</button>
+    <button className="btn btn-success mx-2 my-2" onClick={handleClick} >Reset text to default</button>
+    <button className="btn-bt-primary mx-2 my-2" style={{backgroundColor:'blue', color:'white'}} onClick={handleUpClick} >Convert to Upper text</button>
+    <button className="btn-btnn-primary mx-2 my-2" style={{backgroundColor:'blue', color:'white'}} onClick={handleLowClick} >Convert to Lower text</button>
+        <button className="btn-bt-primary mx-2 my-2" style={{backgroundColor:'grey', color:'yellow'}} onClick={handleCopyClick} >Copy the text</button>
+    <button className="btn-btnn-primary mx-2 my-2" style={{backgroundColor:'blue', color:'white'}} onClick={handleExtraSpaces} >Remove extra spaces</button>
+    <button className="btn-btnn-primary mx-2 my-2" style={{backgroundColor:'blue', color:'white'}} onClick={reversed} >Reverse text</button>
+    <button type="submit" className="btn-btnn-primary mx-3 my-3" style={{backgroundColor:'green', color:'white'}} onClick={speak} >Speech</button>
     </div>
     <div className="my-3"> 
          <h2 style={{color: props.mode==='light'?'black':'grey'}}>Count of words - {text.split(/\s+/).filter((element)=>{return element.length!==0}).length}</h2>
